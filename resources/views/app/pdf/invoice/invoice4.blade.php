@@ -403,15 +403,16 @@
 
 
         @include('app.pdf.invoice.partials.table-custom')
-
-        <div class="notes">
+        <!-- Notes -->
+        <div class="notes" style="color: black; margin-left: 80px; margin-top: 50px;">
             @if ($notes)
                 <div class="notes-label">
-                    @lang('pdf_notes')
+                    <h2 class="h2">Notes</h2>
                 </div>
-
+                
                 {!! $notes !!}
             @endif
+            
         </div>
 
         <div style="
